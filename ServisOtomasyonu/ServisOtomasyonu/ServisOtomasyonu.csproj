@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{940C4EC1-CC04-44D2-B335-765BA86AFDF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ServisOtomasyonu</RootNamespace>
+    <AssemblyName>ServisOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Birim.cs">
+      <DependentUpon>veritabanibag.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cihaz.cs">
+      <DependentUpon>veritabanibag.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Fatura.cs">
+      <DependentUpon>veritabanibag.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FaturaStok.cs">
+      <DependentUpon>veritabanibag.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminPanel.Designer.cs">
+      <DependentUpon>FrmAdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnaEkran.Designer.cs">
+      <DependentUpon>frmAnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFaturalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFaturalar.Designer.cs">
+      <DependentUpon>FrmFaturalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGirisEkrani.Designer.cs">
+      <DependentUpon>FrmGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriBilgisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriBilgisi.Designer.cs">
+      <DependentUpon>frmMusteriBilgisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusterisec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusterisec.Designer.cs">
+      <DependentUpon>frmMusterisec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonelBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonelBilgi.Designer.cs">
+      <DependentUpon>FrmPersonelBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmServisIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmServisIslem.Designer.cs">
+      <DependentUpon>FrmServisIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmServisKayitlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmServisKayitlari.Designer.cs">
+      <DependentUpon>FrmServisKayitlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStok.Designer.cs">
+      <DependentUpon>FrmStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYeniKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYeniKayit.Designer.cs">
+      <DependentUpon>FrmYeniKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYeniStokEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYeniStokEkle.Designer.cs">
+      <DependentUpon>FrmYeniStokEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Genel.cs" />
+    <Compile Include="Magaza.cs">
+      <DependentUpon>veritabanibag.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri.cs">
+      <DependentUpon>veritabanibag.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <DependentUpon>veritabanibag.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>veritabanibag.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>veritabanibag.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Stok.cs">
+      <DependentUpon>veritabanibag.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>veritabanibag.tt</DependentUpon>
+    </Compile>
+    <Compile Include="veritabanibag.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>veritabanibag.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="veritabanibag.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>veritabanibag.tt</DependentUpon>
+    </Compile>
+    <Compile Include="veritabanibag.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>veritabanibag.edmx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAdminPanel.resx">
+      <DependentUpon>FrmAdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnaEkran.resx">
+      <DependentUpon>frmAnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFaturalar.resx">
+      <DependentUpon>FrmFaturalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGirisEkrani.resx">
+      <DependentUpon>FrmGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriBilgisi.resx">
+      <DependentUpon>frmMusteriBilgisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusterisec.resx">
+      <DependentUpon>frmMusterisec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonelBilgi.resx">
+      <DependentUpon>FrmPersonelBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmServisIslem.resx">
+      <DependentUpon>FrmServisIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmServisKayitlari.resx">
+      <DependentUpon>FrmServisKayitlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStok.resx">
+      <DependentUpon>FrmStok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYeniKayit.resx">
+      <DependentUpon>FrmYeniKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYeniStokEkle.resx">
+      <DependentUpon>FrmYeniStokEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EntityDeploy Include="veritabanibag.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>veritabanibag.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="veritabanibag.edmx.diagram">
+      <DependentUpon>veritabanibag.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form arkaplan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteriBilgisi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\servisKayit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteriEkle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personelBilgi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yeniStokEkle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stokKayitlari.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stokKayitlari1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yeniServisEkle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yazdir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kaydet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteriSec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="veritabanibag.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>veritabanibag.Context.cs</LastGenOutput>
+      <DependentUpon>veritabanibag.edmx</DependentUpon>
+    </Content>
+    <Content Include="veritabanibag.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>veritabanibag.edmx</DependentUpon>
+      <LastGenOutput>veritabanibag.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

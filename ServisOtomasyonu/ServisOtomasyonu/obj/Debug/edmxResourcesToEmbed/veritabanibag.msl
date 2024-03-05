@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ServisOtomasyonuModelStoreContainer" CdmEntityContainer="ServisOtomasyonuEntities">
+    <EntitySetMapping Name="Birim">
+      <EntityTypeMapping TypeName="ServisOtomasyonuModel.Birim">
+        <MappingFragment StoreEntitySet="Birim">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MagazaId" ColumnName="MagazaId" />
+          <ScalarProperty Name="BirimAdi" ColumnName="BirimAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cihaz">
+      <EntityTypeMapping TypeName="ServisOtomasyonuModel.Cihaz">
+        <MappingFragment StoreEntitySet="Cihaz">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MusteriId" ColumnName="MusteriId" />
+          <ScalarProperty Name="Takip_No" ColumnName="Takip_No" />
+          <ScalarProperty Name="Marka" ColumnName="Marka" />
+          <ScalarProperty Name="Ariza" ColumnName="Ariza" />
+          <ScalarProperty Name="Barkod" ColumnName="Barkod" />
+          <ScalarProperty Name="Seri_No" ColumnName="Seri_No" />
+          <ScalarProperty Name="Birim" ColumnName="Birim" />
+          <ScalarProperty Name="Personel" ColumnName="Personel" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+          <ScalarProperty Name="Musteri_Beyani" ColumnName="Musteri_Beyani" />
+          <ScalarProperty Name="Giris_Tarihi" ColumnName="Giris_Tarihi" />
+          <ScalarProperty Name="Cikis_Tarihi" ColumnName="Cikis_Tarihi" />
+          <ScalarProperty Name="Uzerinde_Gelenler" ColumnName="Uzerinde_Gelenler" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fatura">
+      <EntityTypeMapping TypeName="ServisOtomasyonuModel.Fatura">
+        <MappingFragment StoreEntitySet="Fatura">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MusteriId" ColumnName="MusteriId" />
+          <ScalarProperty Name="CihazId" ColumnName="CihazId" />
+          <ScalarProperty Name="AltToplam" ColumnName="AltToplam" />
+          <ScalarProperty Name="KDV" ColumnName="KDV" />
+          <ScalarProperty Name="Toplam" ColumnName="Toplam" />
+          <ScalarProperty Name="FaturaTarihi" ColumnName="FaturaTarihi" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FaturaStok">
+      <EntityTypeMapping TypeName="ServisOtomasyonuModel.FaturaStok">
+        <MappingFragment StoreEntitySet="FaturaStok">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FaturaId" ColumnName="FaturaId" />
+          <ScalarProperty Name="StokId" ColumnName="StokId" />
+          <ScalarProperty Name="StokAdedi" ColumnName="StokAdedi" />
+          <ScalarProperty Name="AraToplam" ColumnName="AraToplam" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Magaza">
+      <EntityTypeMapping TypeName="ServisOtomasyonuModel.Magaza">
+        <MappingFragment StoreEntitySet="Magaza">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MagazaAdi" ColumnName="MagazaAdi" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Musteri">
+      <EntityTypeMapping TypeName="ServisOtomasyonuModel.Musteri">
+        <MappingFragment StoreEntitySet="Musteri">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Cari_No" ColumnName="Cari_No" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+          <ScalarProperty Name="Yetkili" ColumnName="Yetkili" />
+          <ScalarProperty Name="GSM" ColumnName="GSM" />
+          <ScalarProperty Name="Sabit" ColumnName="Sabit" />
+          <ScalarProperty Name="E_Mail" ColumnName="E_Mail" />
+          <ScalarProperty Name="Vergi_Dairesi" ColumnName="Vergi_Dairesi" />
+          <ScalarProperty Name="Vergi_No" ColumnName="Vergi_No" />
+          <ScalarProperty Name="Sevk_Adresi" ColumnName="Sevk_Adresi" />
+          <ScalarProperty Name="Il" ColumnName="Il" />
+          <ScalarProperty Name="Ilce" ColumnName="Ilce" />
+          <ScalarProperty Name="Posta_Kodu" ColumnName="Posta_Kodu" />
+          <ScalarProperty Name="Fatura_Adresi" ColumnName="Fatura_Adresi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stok">
+      <EntityTypeMapping TypeName="ServisOtomasyonuModel.Stok">
+        <MappingFragment StoreEntitySet="Stok">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MagazaId" ColumnName="MagazaId" />
+          <ScalarProperty Name="Stok_Kodu" ColumnName="Stok_Kodu" />
+          <ScalarProperty Name="Stok_Kategori" ColumnName="Stok_Kategori" />
+          <ScalarProperty Name="Stok_Adi" ColumnName="Stok_Adi" />
+          <ScalarProperty Name="Stok_Birim_Fiyati" ColumnName="Stok_Birim_Fiyati" />
+          <ScalarProperty Name="Stok_Adeti" ColumnName="Stok_Adeti" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ServisOtomasyonuModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="ServisOtomasyonuModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="ServisOtomasyonuModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="ServisOtomasyonuModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="ServisOtomasyonuModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ServisOtomasyonuModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="ServisOtomasyonuModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ServisOtomasyonuModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="ServisOtomasyonuModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="ServisOtomasyonuModel.Store.sp_upgraddiagrams" />
+    <EntitySetMapping Name="Personel">
+      <EntityTypeMapping TypeName="ServisOtomasyonuModel.Personel">
+        <MappingFragment StoreEntitySet="Personel">
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Yetki" ColumnName="Yetki" />
+          <ScalarProperty Name="Magaza" ColumnName="Magaza" />
+          <ScalarProperty Name="Birim" ColumnName="Birim" />
+          <ScalarProperty Name="Adi_Soyadi" ColumnName="Adi_Soyadi" />
+          <ScalarProperty Name="Personel_No" ColumnName="Personel_No" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

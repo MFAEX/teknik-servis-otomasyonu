@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b6722c3a8a2c41ddb6ccb4f2f4776ba1" Name="Diagram1">
+        <EntityTypeShape EntityType="ServisOtomasyonuModel.Birim" Width="1.5" PointX="5.25" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServisOtomasyonuModel.Cihaz" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServisOtomasyonuModel.Fatura" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServisOtomasyonuModel.FaturaStok" Width="1.5" PointX="7.5" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServisOtomasyonuModel.Magaza" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServisOtomasyonuModel.Musteri" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServisOtomasyonuModel.Stok" Width="1.5" PointX="5.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServisOtomasyonuModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="ServisOtomasyonuModel.FK_Birim_Magaza" ManuallyRouted="false" />
+        <AssociationConnector Association="ServisOtomasyonuModel.FK_Cihaz_Musteri" ManuallyRouted="false" />
+        <AssociationConnector Association="ServisOtomasyonuModel.FK_Faturalar_Cihaz1" ManuallyRouted="false" />
+        <AssociationConnector Association="ServisOtomasyonuModel.FK_Faturalar_Musteri" ManuallyRouted="false" />
+        <AssociationConnector Association="ServisOtomasyonuModel.FK_FaturaStok_Faturalar" ManuallyRouted="false" />
+        <AssociationConnector Association="ServisOtomasyonuModel.FK_FaturaStok_Stok" ManuallyRouted="false" />
+        <AssociationConnector Association="ServisOtomasyonuModel.FK_Stok_Magaza" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ServisOtomasyonuModel.Personel" Width="1.5" PointX="7.125" PointY="5.125" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
